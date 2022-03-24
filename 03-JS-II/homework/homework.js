@@ -5,7 +5,7 @@ function obtenerMayor(x, y) {
   // Devuelve el número más grande
   // Si son iguales, devuelve cualquiera de los dos
   // Tu código:
-  if (x >= y ); {
+  if (x > y ) {
     return x;
   }
   return y;
@@ -16,10 +16,10 @@ function mayoriaDeEdad(edad) {
   //Si tiene 18 años ó más, devolver --> "Allowed"
   //Si es menor, devolver --> "Not allowed"
   if (edad >= 18) {
-    console.log('Allowed')
+    return "Allowed";
   }
   else {
-  console.log('Desallowed')
+  return "Desallowed";
   }
 }
   
@@ -33,10 +33,10 @@ function conection(status) {
     return "Online";
       } 
       else if (status === 2) {
-        return "Away"
+        return "Away";
       } 
       else {
-        return "Offline"
+        return "Offline";
       }
 }
 
@@ -106,7 +106,7 @@ function esEntero(numero) {
   // De lo contrario, devuelve "false"
   // Pista: Puedes resolver esto usando `Math.floor`
   // Tu código:
-  return numero === math.floor(numero) ;
+  return numero % 1 === 0;
 }
 
 function fizzBuzz(numero) {
