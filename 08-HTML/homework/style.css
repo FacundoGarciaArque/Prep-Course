@@ -1,0 +1,12 @@
+#thirdDiv{
+    height: 600px;
+    width: 500px;
+    background-color: darkgreen;
+    padding: 50 px;
+    border: 1 px solid brown;
+}
+
+#spanId{
+    font-size: 18 px;
+    margin: 50 px ;
+}
