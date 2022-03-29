@@ -27,7 +27,7 @@ function incrementarPorUno(array) {
   // y devuelve el array
   // Tu código:
   var nuevoarray = [] ;
-  for (i=0 ; i=nuevoarray.length - 1; i++) {
+  for (var i=0 ; i < nuevoarray.length; i++) {
   nuevoarray[i]=array[i] + 1;
   }
   return nuevoarray;
@@ -68,11 +68,11 @@ function arrayContiene(array, elemento) {
   // Tu código:
   
   for ( var i=0 ; i< array.length ;i++) {
-    if (narray[i] === elemento) {
+    if (array[i] === elemento) {
       return true ;
     }
        }
-       return false
+       return false ;
   }
 
 
@@ -82,10 +82,10 @@ function agregarNumeros(numeros) {
   // Suma todos los enteros y devuelve el valor
   // Tu código:
   var suma=0;
-  for (i=0; i < numeros ; i++) {
+  for (i=0; i < numeros.length ; i++) {
     suma = numeros[i]+ suma ;
   }
-  return suma
+  return suma ;
 }
 
 
@@ -102,12 +102,12 @@ function numeroMasGrande(numeros) {
   // Devuelve el número más grande
   // Tu código:
   var maximo=numeros [0];
-  for (i=1 ; i < numeros.length ; i++){
+  for (var i=1 ; i < numeros.length ; i++){
     if (numeros[i] > maximo){
       maximo = numeros[i];
     }
   }
-  return maximo
+  return maximo ;
 }
 
 
@@ -133,7 +133,7 @@ function cuentoElementos(arreglo){
    array.push(arreglo[i]) ;
     }
   }
-return array.length
+return array.length ;
 }
 
 
@@ -167,7 +167,7 @@ function todosIguales(arreglo) {
   //retornar true, caso contrario retornar false.
   //Escribe tu código aquí  
   e= arreglo.lenth - 1 ; 
-  for (i=0 ; i < e ; i++){
+  for (var i=0 ; i < e ; i++){
     if (arreglo[i] !== arreglo [i+1]){
       return false
     }
@@ -182,7 +182,7 @@ function mesesDelAño(array) {
   //Si alguno de los meses no está, devolver: "No se encontraron los meses pedidos"
   // Tu código:
   var nuevarray= [] ;
-  for (i=0 ; i < array.length ; i++){
+  for (var i=0 ; i < array.length ; i++){
     if (array[i]=== 'Enero' || array[i]=== 'Marzo' || array[i === 'Noviembre']){
       nuevarray.push(array[i]);
     }
@@ -204,7 +204,7 @@ function mayorACien(array) {
   //valores mayores a 100 (no incluye el 100). Finalmente devolver el nuevo array.
   // Tu código:
   var nuevarray= [];
-  for (i=0 ; i < array.length ; i++){
+  for ( var i=0 ; i < array.length ; i++){
     if (array[i] > 100){
       nuevarray.push(array[i]);
     }
@@ -223,7 +223,7 @@ function breakStatement(numero) {
   // Tu código:
   var nuevarrray= [];
   var suma = numero;
-  for (i=0 ; i < 10 ; i++){
+  for (var i=0 ; i < 10 ; i++){
     suma = suma +2 ;
     if (suma === i ) break ;
     else {
@@ -247,7 +247,7 @@ function continueStatement(numero) {
   // Tu código:
   var nuevarrray= [];
   var suma = numero;
-  for (i=0 ; i < 10 ; i++){
+  for (var i=0 ; i < 10 ; i++){
     if (i=== 5) continue;
     else {
     suma= suma+2;
