@@ -38,8 +38,8 @@ function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
   // y devuelve el array
   // Tu código:
-  nuevarray = array.push(elemento);
-  return nuevaarray ;
+  array[array.length] = elemento ;
+   return array ;
 }
 
 
@@ -167,8 +167,7 @@ function todosIguales(arreglo) {
   //Escriba la función todosIguales, que indique si todos los elementos de un arreglo son iguales:
   //retornar true, caso contrario retornar false.
   //Escribe tu código aquí  
-  e= arreglo.length ; 
-  for (var i=0 ; i < e ; i++){
+   for (var i=0 ; i < arreglo.length ; i++){
     if (arreglo[i] !== arreglo [i+1]){
       return false
     }
@@ -188,7 +187,7 @@ function mesesDelAño(array) {
       nuevarray.push(array[i]);
     }
   }
-  if (nuevaarray.length < 3) {
+  if (nuevarray.length < 3) {
     return "No se encontraron los meses pedidos";
   }
   else {
@@ -205,7 +204,7 @@ function mayorACien(array) {
   //valores mayores a 100 (no incluye el 100). Finalmente devolver el nuevo array.
   // Tu código:
   var nuevarray= [];
-  for ( var i= 0 ; i < array.length ; i++){
+  for ( let i= 0 ; i < array.length ; i++){
     if (array[i] > 100){
       nuevarray.push(array[i]);
     }
