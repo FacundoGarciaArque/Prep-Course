@@ -39,7 +39,7 @@ function agregarStringInvertida() {
   // Pista: Necesitarás usar "this" dentro de "reverse"
   String.prototype.reverse = function (){
     var Stringinv = '';
-    for (i=this.length ; i = 0 ; i++) {
+    for (i=this.length - 1 ; i = 0 ; i++) {
       Stringinv= Stringinv + this.charAt(i);
     }
   }
@@ -57,23 +57,23 @@ function agregarStringInvertida() {
     //   Domicilio: 'Saavedra 123'
     //  }
 
-  class Persona {
-    constructor(nombre, apellido, edad, domicilio) {
-      // Crea el constructor:
-      this.nombre = nombre,
-      this.apellido = apellido,
-      this.edad = edad,
-      this.domicilio = domicilio,
-      this.detalle = function() {
+    class Persona {
+      constructor(nombre, apellido, edad, domicilio) {
+        // Tu código:
+        this.nombre = nombre,
+        this.apellido = apellido,
+        this.edad = edad,
+        this.domicilio = domicilio
+        this.detalle = function() {
           return { 
             Nombre: this.nombre,
             Apellido: this.apellido,
             Edad: this.edad,
             Domicilio: this.domicilio
           }
+        }
+      }
     }
-  }
-}
 
 
 function crearInstanciaPersona(nombre, apellido, edad, dir) {
