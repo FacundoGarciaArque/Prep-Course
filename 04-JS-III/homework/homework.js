@@ -27,7 +27,7 @@ function incrementarPorUno(array) {
   // y devuelve el array
   // Tu código:
   var nuevoarray = [] ;
-  for (var i=0 ; i < nuevoarray.length; i++) {
+  for (var i=0 ; i < array.length; i++) {
   nuevoarray[i]=array[i] + 1;
   }
   return nuevoarray;
@@ -38,7 +38,8 @@ function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
   // y devuelve el array
   // Tu código:
-  return array.push(elemento);
+  nuevarray = array.push(elemento);
+  return nuevaarray ;
 }
 
 
@@ -166,7 +167,7 @@ function todosIguales(arreglo) {
   //Escriba la función todosIguales, que indique si todos los elementos de un arreglo son iguales:
   //retornar true, caso contrario retornar false.
   //Escribe tu código aquí  
-  e= arreglo.lenth - 1 ; 
+  e= arreglo.length ; 
   for (var i=0 ; i < e ; i++){
     if (arreglo[i] !== arreglo [i+1]){
       return false
@@ -183,7 +184,7 @@ function mesesDelAño(array) {
   // Tu código:
   var nuevarray= [] ;
   for (var i=0 ; i < array.length ; i++){
-    if (array[i]=== 'Enero' || array[i]=== 'Marzo' || array[i === 'Noviembre']){
+    if (array[i]=== 'Enero' || array[i]=== 'Marzo' || array[i] === 'Noviembre'){
       nuevarray.push(array[i]);
     }
   }
@@ -204,7 +205,7 @@ function mayorACien(array) {
   //valores mayores a 100 (no incluye el 100). Finalmente devolver el nuevo array.
   // Tu código:
   var nuevarray= [];
-  for ( var i=0 ; i < array.length ; i++){
+  for ( var i= 0 ; i < array.length ; i++){
     if (array[i] > 100){
       nuevarray.push(array[i]);
     }
