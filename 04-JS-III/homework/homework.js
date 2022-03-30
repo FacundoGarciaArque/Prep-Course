@@ -191,7 +191,7 @@ function mesesDelAño(array) {
     return "No se encontraron los meses pedidos";
   }
   else {
-    return nuevaarray;
+    return nuevarray;
   }
 }
   
