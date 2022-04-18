@@ -32,7 +32,7 @@ function devolverString(str) {
 }
 
 function suma(x, y) {
-  // "x" e "y" son números
+  // "x" e "y" son númer
   // Suma "x" e "y" juntos y devuelve el valor
   // Tu código:
   var sum = x + y;
